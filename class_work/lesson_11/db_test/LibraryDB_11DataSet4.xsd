@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LibraryDB_11DataSet4" targetNamespace="http://tempuri.org/LibraryDB_11DataSet4.xsd" xmlns:mstns="http://tempuri.org/LibraryDB_11DataSet4.xsd" xmlns="http://tempuri.org/LibraryDB_11DataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LibraryDB_11ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LibraryDB_11ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.db_test.Properties.Settings.GlobalReference.Default.LibraryDB_11ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BooksCountWithRollUpTableAdapter" GeneratorDataComponentClassName="BooksCountWithRollUpTableAdapter" Name="BooksCountWithRollUp" UserDataComponentName="BooksCountWithRollUpTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LibraryDB_11ConnectionString (Settings)" DbObjectName="dbo.BooksCountWithRollUp" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Жанр, [Общая стоимость], [Общее кол-во] FROM dbo.BooksCountWithRollUp</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Жанр" DataSetColumn="Жанр" />
+              <Mapping SourceColumn="Общая стоимость" DataSetColumn="Общая стоимость" />
+              <Mapping SourceColumn="Общее кол-во" DataSetColumn="Общее кол-во" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LibraryDB_11DataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LibraryDB_11DataSet4" msprop:Generator_UserDSName="LibraryDB_11DataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BooksCountWithRollUp" msprop:Generator_TableClassName="BooksCountWithRollUpDataTable" msprop:Generator_TableVarName="tableBooksCountWithRollUp" msprop:Generator_TablePropName="BooksCountWithRollUp" msprop:Generator_RowDeletingName="BooksCountWithRollUpRowDeleting" msprop:Generator_RowChangingName="BooksCountWithRollUpRowChanging" msprop:Generator_RowEvHandlerName="BooksCountWithRollUpRowChangeEventHandler" msprop:Generator_RowDeletedName="BooksCountWithRollUpRowDeleted" msprop:Generator_UserTableName="BooksCountWithRollUp" msprop:Generator_RowChangedName="BooksCountWithRollUpRowChanged" msprop:Generator_RowEvArgName="BooksCountWithRollUpRowChangeEvent" msprop:Generator_RowClassName="BooksCountWithRollUpRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Жанр" msprop:Generator_ColumnVarNameInTable="columnЖанр" msprop:Generator_ColumnPropNameInRow="Жанр" msprop:Generator_ColumnPropNameInTable="ЖанрColumn" msprop:Generator_UserColumnName="Жанр" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Общая_x0020_стоимость" msprop:Generator_ColumnVarNameInTable="columnОбщая_стоимость" msprop:Generator_ColumnPropNameInRow="Общая_стоимость" msprop:Generator_ColumnPropNameInTable="Общая_стоимостьColumn" msprop:Generator_UserColumnName="Общая стоимость" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Общее_x0020_кол-во" msprop:Generator_ColumnVarNameInTable="_columnОбщее_кол_во" msprop:Generator_ColumnPropNameInRow="_Общее_кол_во" msprop:Generator_ColumnPropNameInTable="_Общее_кол_воColumn" msprop:Generator_UserColumnName="Общее кол-во" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

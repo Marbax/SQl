@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LibraryDB_11DataSet8" targetNamespace="http://tempuri.org/LibraryDB_11DataSet8.xsd" xmlns:mstns="http://tempuri.org/LibraryDB_11DataSet8.xsd" xmlns="http://tempuri.org/LibraryDB_11DataSet8.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LibraryDB_11ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LibraryDB_11ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.db_test.Properties.Settings.GlobalReference.Default.LibraryDB_11ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PivotExmplTableAdapter" GeneratorDataComponentClassName="PivotExmplTableAdapter" Name="PivotExmpl" UserDataComponentName="PivotExmplTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LibraryDB_11ConnectionString (Settings)" DbObjectName="dbo.PivotExmpl" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Сводка, [Учебная литература], [Техническая литература], [Научаная фантастика] FROM dbo.PivotExmpl</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Сводка" DataSetColumn="Сводка" />
+              <Mapping SourceColumn="Учебная литература" DataSetColumn="Учебная литература" />
+              <Mapping SourceColumn="Техническая литература" DataSetColumn="Техническая литература" />
+              <Mapping SourceColumn="Научаная фантастика" DataSetColumn="Научаная фантастика" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LibraryDB_11DataSet8" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LibraryDB_11DataSet8" msprop:Generator_UserDSName="LibraryDB_11DataSet8">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PivotExmpl" msprop:Generator_TableClassName="PivotExmplDataTable" msprop:Generator_TableVarName="tablePivotExmpl" msprop:Generator_TablePropName="PivotExmpl" msprop:Generator_RowDeletingName="PivotExmplRowDeleting" msprop:Generator_RowChangingName="PivotExmplRowChanging" msprop:Generator_RowEvHandlerName="PivotExmplRowChangeEventHandler" msprop:Generator_RowDeletedName="PivotExmplRowDeleted" msprop:Generator_UserTableName="PivotExmpl" msprop:Generator_RowChangedName="PivotExmplRowChanged" msprop:Generator_RowEvArgName="PivotExmplRowChangeEvent" msprop:Generator_RowClassName="PivotExmplRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Сводка" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnСводка" msprop:Generator_ColumnPropNameInRow="Сводка" msprop:Generator_ColumnPropNameInTable="СводкаColumn" msprop:Generator_UserColumnName="Сводка" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Учебная_x0020_литература" msprop:Generator_ColumnVarNameInTable="columnУчебная_литература" msprop:Generator_ColumnPropNameInRow="Учебная_литература" msprop:Generator_ColumnPropNameInTable="Учебная_литератураColumn" msprop:Generator_UserColumnName="Учебная литература" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Техническая_x0020_литература" msprop:Generator_ColumnVarNameInTable="columnТехническая_литература" msprop:Generator_ColumnPropNameInRow="Техническая_литература" msprop:Generator_ColumnPropNameInTable="Техническая_литератураColumn" msprop:Generator_UserColumnName="Техническая литература" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Научаная_x0020_фантастика" msprop:Generator_ColumnVarNameInTable="columnНаучаная_фантастика" msprop:Generator_ColumnPropNameInRow="Научаная_фантастика" msprop:Generator_ColumnPropNameInTable="Научаная_фантастикаColumn" msprop:Generator_UserColumnName="Научаная фантастика" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

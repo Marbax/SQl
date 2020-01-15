@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LibraryDB_11DataSet" targetNamespace="http://tempuri.org/LibraryDB_11DataSet.xsd" xmlns:mstns="http://tempuri.org/LibraryDB_11DataSet.xsd" xmlns="http://tempuri.org/LibraryDB_11DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LibraryDB_11ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LibraryDB_11ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.db_test.Properties.Settings.GlobalReference.Default.LibraryDB_11ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ExmpTableAdapter" GeneratorDataComponentClassName="ExmpTableAdapter" Name="Exmp" UserDataComponentName="ExmpTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LibraryDB_11ConnectionString (Settings)" DbObjectName="dbo.Exmp" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Наименование жанра], [Общая стоимость книг] FROM dbo.Exmp</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Наименование жанра" DataSetColumn="Наименование жанра" />
+              <Mapping SourceColumn="Общая стоимость книг" DataSetColumn="Общая стоимость книг" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LibraryDB_11DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LibraryDB_11DataSet" msprop:Generator_UserDSName="LibraryDB_11DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Exmp" msprop:Generator_TableClassName="ExmpDataTable" msprop:Generator_TableVarName="tableExmp" msprop:Generator_TablePropName="Exmp" msprop:Generator_RowDeletingName="ExmpRowDeleting" msprop:Generator_RowChangingName="ExmpRowChanging" msprop:Generator_RowEvHandlerName="ExmpRowChangeEventHandler" msprop:Generator_RowDeletedName="ExmpRowDeleted" msprop:Generator_UserTableName="Exmp" msprop:Generator_RowChangedName="ExmpRowChanged" msprop:Generator_RowEvArgName="ExmpRowChangeEvent" msprop:Generator_RowClassName="ExmpRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Наименование_x0020_жанра" msprop:Generator_ColumnVarNameInTable="columnНаименование_жанра" msprop:Generator_ColumnPropNameInRow="Наименование_жанра" msprop:Generator_ColumnPropNameInTable="Наименование_жанраColumn" msprop:Generator_UserColumnName="Наименование жанра">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Общая_x0020_стоимость_x0020_книг" msprop:Generator_ColumnVarNameInTable="columnОбщая_стоимость_книг" msprop:Generator_ColumnPropNameInRow="Общая_стоимость_книг" msprop:Generator_ColumnPropNameInTable="Общая_стоимость_книгColumn" msprop:Generator_UserColumnName="Общая стоимость книг" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
