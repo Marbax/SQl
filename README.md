@@ -112,7 +112,7 @@ where Title='Bompo';
 
 <details><summary> SQL_06 .Trigers , procedures. </summary><p>
 
-[Trigers,procedures](SQL\CW_06\main.sql "SQL\CW_06\main.sql")   
+[Trigers,procedures](SQL/CW_06/main.sql "SQL/CW_06/main.sql")   
 
 ---
 
@@ -448,7 +448,7 @@ else
 
 ---
 
-[Procedures and Functions example](\class_work\lesson_07\main.sql "\class_work\lesson_07\main.sql")   
+[Procedures and Functions example](/class_work/lesson_07/main.sql "/class_work/lesson_07/main.sql")   
 
 ---
 
@@ -460,7 +460,7 @@ else
 
 ---
 
-[Functions example](\class_work\lesson_08\main.sql "\class_work\lesson_08\main.sql")   
+[Functions example](/class_work/lesson_08/main.sql "/class_work/lesson_08/main.sql")   
 
 ---
 
@@ -472,7 +472,7 @@ else
 
 ---
 
-[WinForms plus DB example](\class_work\lesson_11 "\class_work\lesson_11")   
+[WinForms plus DB example](/class_work/lesson_11 "/class_work/lesson_11")   
 
 ---
 
@@ -484,9 +484,9 @@ else
 
 ---
 
-[DB Permissions and Roles example](\class_work\lesson_12\permissions.sql "\class_work\lesson_12\permissions.sql")   
+[DB Permissions and Roles example](/class_work/lesson_12/permissions.sql "/class_work/lesson_12/permissions.sql")   
 
-[DB Permissions and Roles example from HW](\home_work\HW_12\permissions.sql "\home_work\HW_12\permissions.sql")   
+[DB Permissions and Roles example from HW](/home_work/HW_12/permissions.sql "/home_work/HW_12/permissions.sql")   
 
 ---
 
