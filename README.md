@@ -478,3 +478,17 @@ else
 
 </p></details>
 
+---
+
+<details><summary> SQL_12. Permissions and Bkp . </summary><p>
+
+---
+
+[DB Permissions and Roles example](\class_work\lesson_12\permissions.sql "\class_work\lesson_12\permissions.sql")   
+
+[DB Permissions and Roles example from HW](\home_work\HW_12\permissions.sql "\home_work\HW_12\permissions.sql")   
+
+---
+
+</p></details>
+
