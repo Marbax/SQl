@@ -474,6 +474,7 @@ else
 
 [WinForms plus DB example](/class_work/lesson_11 "/class_work/lesson_11")   
 
+[DB Permissions and Roles example from HW](/home_work/HW_11/permissions.sql "/home_work/HW_11/permissions.sql")   
 ---
 
 </p></details>
